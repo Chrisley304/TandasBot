@@ -1,8 +1,9 @@
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
+from utils.strings import TELEGRAM_TOKEN
 # Import of bot commands
 from commands.help import start_command, help_command
 from commands.handlers import handle_message, handle_error
-from utils.strings import TELEGRAM_TOKEN
+from commands.create import create_tanda_command
 
 if __name__ == '__main__':
     print("Starting bot...")
@@ -10,7 +11,8 @@ if __name__ == '__main__':
 
     # Commands handlers
     app.add_handler(CommandHandler("start", start_command))
-    app.add_handler(CommandHandler("help", help_command))
+    app.add_handler(CommandHandler("ayuda", help_command))
+    app.add_handler(CommandHandler("creartanda", create_tanda_command))
 
     # Message handlers
     app.add_handler(MessageHandler(filters.TEXT, handle_message))

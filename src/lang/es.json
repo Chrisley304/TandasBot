@@ -6,5 +6,15 @@
     },
     "responses": {
         "greeting": "¡Hola! Soy TandasBot estoy aquí para ayudarte a administrar tus tandas con Notion. Envía /ayuda para ver los comandos disponibles."
+    },
+    "commands": {
+        "create": {
+            "start": "Vamos a crear una nueva tanda. ¿Cómo se llamará?",
+            "participants": "Ingresa el nombre de las personas que participarán separadas por comas. (Ej. Juan, Pedro, María)",
+            "amount": "¿Cuánto dinero pagara cada persona? (Ej. 50 pesos)",
+            "confirm_amount": "El total de la tanda es {total_amount} ¿Es esto correcto?",
+            "period": "¿Que día del mes deben pagar? (Ej. 17)",
+            "confirm": "¡Listo! La tanda {name} ha sido creada."
+        }
     }
 }
