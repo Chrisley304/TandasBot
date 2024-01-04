@@ -9,12 +9,18 @@
     },
     "commands": {
         "create": {
-            "start": "Vamos a crear una nueva tanda. ¿Cómo se llamará?",
-            "participants": "Ingresa el nombre de las personas que participarán separadas por comas. (Ej. Juan, Pedro, María)",
-            "amount": "¿Cuánto dinero pagara cada persona? (Ej. 50 pesos)",
+            "start": "¡Vamos a crear una nueva tanda!. Envía /cancelar para cancelar la operación. ",
+            "get_name": "Comencemos con el nombre, ¿Cómo se llamará?",
+            "get_emoji": "Perfecto, es un gran nombre. Ahora elige un emoji para la tanda. (Ej. 🎧)",
+            "get_participants": "Ingresa el nombre de las personas que participarán separadas por comas. (Ej. Juan, Pedro, María)",
+            "get_amount": "¿Cuánto dinero pagara cada persona? (Ej. 50 pesos)",
             "confirm_amount": "El total de la tanda es {total_amount} ¿Es esto correcto?",
-            "period": "¿Que día del mes deben pagar? (Ej. 17)",
-            "confirm": "¡Listo! La tanda {name} ha sido creada."
+            "get_period": "¿Que día del mes deben pagar? (Ej. 17)",
+            "confirm": "¡Listo! La tanda {name} ha sido creada.",
+            "cancel": "Haz cancelado la creación de la tanda.",
+            "done": "¡Listo! La tanda {name} ha sido creada.",
+            "invalid_amount": "Error no ingresaste un numero valido. Vuelve a intentarlo e ingresa un numero valido. (Entradas validas: 50 pesos, $50, 50)",
+            "invalid_period": "Error no ingresaste un numero valido. Vuelve a intentarlo e ingresa un numero valido al comienzo del mensaje. (Entradas validas: 17, 17 de cada mes, 17 del mes)"
         }
     }
 }
